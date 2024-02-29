@@ -26,4 +26,11 @@ public class ContaCorrente extends Conta {
         return super.getSaldo() + chequeEspecial;
     }
 
+    // SOBRESCRITA DE MÉTODOS
+    @Override
+    public void saque(double valor){
+        valor += 10;
+        super.saque(valor);
+    }
+
 }

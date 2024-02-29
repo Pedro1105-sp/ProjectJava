@@ -3,14 +3,38 @@ package br.com.fiap.banco;
 public class Teste {
     public static void main(String[] args) {
 
-        Conta conta = new Conta();
+
+        Conta conta1 = new Conta();
+        conta1.depositar(1000);
+        conta1.saque(100);
+
+
+        ContaCorrente conta2 = new ContaCorrente();
+        conta2.depositar(1000);
+        conta2.saque(100);
+
+
+        Conta conta3 = new ContaCorrente();
+        conta3.depositar(1000);
+        conta3.saque(100);
+
+
+        System.out.println("Conta1: " + conta1.getSaldo());
+        System.out.println("Conta2: " + conta2.getSaldo());
+        System.out.println("Conta3: " + conta3.getSaldo());
+
+
+
+
+
+        /*Conta conta = new Conta();
         Conta cc = new ContaCorrente();
 
         ContaCorrente c1 = (ContaCorrente) cc;
 
         if(conta instanceof ContaCorrente) {
             ContaCorrente c2 = (ContaCorrente) conta;
-        }
+        }*/
 
 
 
