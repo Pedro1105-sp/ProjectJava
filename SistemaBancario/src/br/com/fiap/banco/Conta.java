@@ -1,8 +1,11 @@
 package br.com.fiap.banco;
 
+import java.io.Serial;
 import java.io.Serializable;
 
 public class Conta implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     private int agencia;
     private int numero;
@@ -47,6 +50,7 @@ public class Conta implements Serializable {
     }
 
     public double getSaldo(){
+
         return this.saldo;
     }
 
